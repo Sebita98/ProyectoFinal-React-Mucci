@@ -1,0 +1,10 @@
+.perfumes{
+    display: block;
+    width: 300px;
+}
+
+.perfumes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
