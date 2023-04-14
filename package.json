@@ -2,18 +2,14 @@
   "name": "proyecto",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sebita98.github.io/ProyectoFinal-React-Mucci",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "firebase": "^9.19.1",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"
