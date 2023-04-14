@@ -5,12 +5,6 @@ import './index.css';
 import './firebase/config';
 
 
-
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-
+)

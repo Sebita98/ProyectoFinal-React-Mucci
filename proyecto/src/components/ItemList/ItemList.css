@@ -1,0 +1,18 @@
+.loader {
+    width: 25px;
+    height: 25px;
+    margin: 1rem;
+    border: 2px solid rgb(231, 102, 102);
+    border-bottom-color: transparent;
+    animation: 1s spin ease-in infinite;    
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

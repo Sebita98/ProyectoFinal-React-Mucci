@@ -2,11 +2,11 @@ import React from 'react';
 import { useCartContext } from '../../context/CartContext';
 
 const CartWidget = () => {
-  const {totalProduct} = useCartContext();
+  const { totalProducts } = useCartContext();
   return (
     <>
       <i className='bi bi-cart2'></i>
-      <span>{totalProduct()|| ''} </span>
+      <span>{totalProducts()|| ''} </span>
     </>
   );
 }

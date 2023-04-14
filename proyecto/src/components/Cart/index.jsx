@@ -2,7 +2,7 @@ import React from 'react'
 import { useCartContext } from '../../context/CartContext'
 import ItemCart from '../ItemCart';
 import {Link} from 'react-router-dom';
-import {getFirestore} from 'firebase/firestore';
+import { addDoc, collection, getFirestore} from 'firebase/firestore';
 
 const Cart = () => {
     const { cart, totalPrice } = useCartContext();
@@ -20,11 +20,10 @@ const Cart = () => {
 
     const handleClick = () => {
         const db = getFirestore();
-        const ordersCollection = collection (db, 'orders');
+        const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
-        .then(({id}) => console.log(id))
+            .then(({id}) => console.log(id))
     }
-
 
     if (cart.lenght === 0) {
         return (
@@ -34,8 +33,6 @@ const Cart = () => {
             </>
         );
     }
-
-
 
     return (
         <>
