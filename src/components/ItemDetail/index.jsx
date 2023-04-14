@@ -1,4 +1,4 @@
-import './ItemDetail.css';
+import './itemDetail.css';
 
 import { useState } from 'react';
 import {useCartContext} from '../../context/CartContext'
